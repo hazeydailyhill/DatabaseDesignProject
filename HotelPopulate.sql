@@ -1,6 +1,6 @@
 prompt Haley Hill
 prompt CS 325 - Fall 2022
-prompt Last Modified: December 5, 2022
+prompt Last Modified: 12/07/2022
 prompt
 
 delete from employee;
@@ -170,10 +170,10 @@ insert into bill
 values('0022', 800.00, 'no', '40915', '7891');
 
 insert into bill
-values('0033', 200.00, 'yes', '18657', '5327');
+values('0033', 0.00, 'yes', '18657', '5327');
 
 insert into bill
-values('0044', 320.00, 'yes', '26371', '2459');
+values('0044', 0.00, 'yes', '26371', '2459');
 
 insert into bill
 values('0055', 430.00, 'no', '68423', '8901');
