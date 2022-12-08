@@ -1,0 +1,12 @@
+﻿Haley Hill
+CS 325 - Fall 2022
+Last modified: 12/05/2022
+Business Rules:
+* An occupied suite can only be reserved for after the current guest’s check-out date.
+* A guest must make at least one reservation.
+* A guest can make reservations for themselves and for someone else. 
+* An employee can clean many rooms but a room is cleaned by just one employee.
+* Not all employees clean rooms– this depends on the job title.
+* Many guests can place many orders for food off the menu. Guests do not have to place orders if they don’t want to, but only guests can order from the hotel.
+* The costs of a guest’s reservation and food orders are added to their bill.
+* A guest has one total bill they are responsible for by their check-out date.

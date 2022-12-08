@@ -1,0 +1,159 @@
+employee table
+
+EMPL_ EMPL_LNAME      EMPL_FNAME      JOB_TITLE                     SALARY
+----- --------------- --------------- ------------------------- ----------
+123ab Jenkins         Nigel           Accountant                      3000
+456ab Ford            James           Clerk                            800
+789ab Chua            Sancho          Housekeeping                    1250
+123cd Bobberson       Sandy           Accountant                      3100
+456cd Smith           Jules           Maintenance                     1600
+789cd Ridgewood       Sam             Kitchen Staff                   1500
+123ef Richards        Alex            Housekeeping                    1250
+456ef Miller          Caleb           Housekeeping                    1300
+789ef Taylor          Mira            Kitchen Staff                   1500
+123gh Owens           Jacquelyn       Clerk                            800
+456gh Ford            Lucas           Housekeeping                    1300
+
+EMPL_ EMPL_LNAME      EMPL_FNAME      JOB_TITLE                     SALARY
+----- --------------- --------------- ------------------------- ----------
+789gh Jacobs          Jacob           Housekeeping                    1250
+123ij Cooper          Simon           Housekeeping                    1250
+
+13 rows selected.
+
+room table
+
+ROOM_ ROOM_TYPE  ROOM_PRICE EMPL_
+----- ---------- ---------- -----
+yz000 1bedroom           75 789gh
+yz111 1bedroom           75 456gh
+yz222 2bedroom          100 456gh
+yz333 1bedroom           75 456ef
+yz444 2bedroom          100 789gh
+yz555 2bedroom          100 789ab
+wx000 1bedroom           75 123ij
+wx111 2bedroom          100 456ef
+wx222 1bedroom           75 123ij
+wx333 2bedroom          100 789ab
+wx444 1bedroom           75 123ij
+
+11 rows selected.
+
+guest table
+
+GUEST GUEST_LNAME     GUEST_FNAME     GUEST_CARD_INFO
+----- --------------- --------------- ---------------
+78902 Evans           Jasmine              1.0013E+15
+40915 Ortiz           Gabe                 7.8960E+15
+18657 Mitchell        Rose                 1.8204E+15
+26371 Butler          Alef                 6.3549E+15
+68423 Sheldon         Eric                 7.5836E+15
+77392 Waters          Finn                 7.2456E+15
+25673 Sanchez         Anya                 1.6244E+15
+11526 Powell          Izzy                 1.6179E+15
+56742 Holt            Harry                3.6254E+15
+10471 Goodwin         Harriet              6.7289E+15
+
+10 rows selected.
+
+reservation table
+
+RES_ RES_CHECK RES_CHECK ROOM_ GUEST
+---- --------- --------- ----- -----
+1230 03-DEC-22 10-DEC-22 yz000 10471
+2349 28-NOV-22 05-DEC-22 wx111 56742
+3458 06-DEC-22 13-DEC-22 wx222 11526
+4567 12-DEC-22 20-DEC-22 yz333 25673
+5671 05-DEC-22 09-DEC-22 yz444 77392
+8901 05-DEC-22 12-DEC-22 yz222 68423
+2459 09-DEC-22 19-DEC-22 yz111 26371
+5327 04-DEC-22 11-DEC-22 wx333 18657
+7891 02-DEC-22 12-DEC-22 yz555 40915
+1820 07-DEC-22 14-DEC-22 wx444 78902
+
+10 rows selected.
+
+bill table
+
+BILL BILL_TOTAL BIL GUEST RES_
+---- ---------- --- ----- ----
+0011        547 no  78902 1820
+0022        800 no  40915 7891
+0033        200 yes 18657 5327
+0044        320 yes 26371 2459
+0055        430 no  68423 8901
+0066        338 no  77392 5671
+0077        429 no  25673 4567
+0088        300 no  11526 3458
+0099        389 no  56742 2349
+1010        562 no  10471 1230
+
+10 rows selected.
+
+phone table
+
+GUEST GUEST_PHONE
+----- -----------
+10471  7770006666
+11526  7770004444
+18657  8882220000
+25673  7770002222
+26371  8885559999
+40915  8881113333
+56742  7770005555
+68423  8882227777
+77392  7770003333
+78902  8880004444
+
+10 rows selected.
+
+menu table
+
+FOOD FOOD_NAME       FOOD_PRICE
+---- --------------- ----------
+0000 Lasagna                 15
+0001 Sushi                   20
+0011 Tacos                   12
+0111 Spaghetti               10
+1111 Burger                  18
+0101 Pancakes                10
+0100 Lobster                 40
+1000 Curry                   18
+1010 Steak                   30
+1100 Pizza                   15
+
+10 rows selected.
+
+food_order table
+
+ORDE BILL FOOD
+---- ---- ----
+1111 0022 0100
+2222 0022 1010
+3333 0011 1111
+4444 0099 1100
+5555 0088 0000
+6666 0033 0001
+7777 0044 0011
+8888 0055 0111
+9999 0066 1100
+9090 0066 0101
+
+10 rows selected.
+
+guest_food_order table
+
+GUEST ORDE
+----- ----
+11526 5555
+18657 6666
+26371 7777
+40915 1111
+40915 2222
+56742 4444
+68423 8888
+77392 9090
+77392 9999
+78902 3333
+
+10 rows selected.

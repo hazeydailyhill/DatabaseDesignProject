@@ -1,0 +1,40 @@
+﻿Haley Hill
+CS 325 - Fall 2022
+Last Modified: 12/05/2022
+
+
+employee(EMPL_ID, empl_lname, empl_fname, job_title, salary)
+
+
+room(ROOM_ID, room_type, room_price, empl_id)
+        Foreign key (empl_id) references employee
+
+
+guest(GUEST_ID, guest_lname, guest_fname, guest_card_info)
+
+
+reservation(RES_ID, res_checkin, res_checkout, room_id, guest_id)
+        Foreign key (room_id) references room
+        Foreign key (guest_id) references guest
+
+
+bill(BILL_ID, bill_total, bill_payment, guest_id, res_id)
+        Foreign key (guest_id) references guest
+        Foreign key (res_id) references reservation
+
+
+phone(GUEST_ID, GUEST_PHONE)
+        Foreign key (guest_id) references guest
+
+
+menu(FOOD_ID, food_name, food_price)
+
+
+food_order(ORDER_ID, bill_id, food_id)
+        Foreign key (bill_id) references bill
+        Foreign key (food_id) references menu
+
+
+guest_food_order(GUEST_ID, ORDER_ID)
+        Foreign key (guest_id) references guest
+        Foreign key (order_id) references food_order
