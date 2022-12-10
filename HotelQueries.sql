@@ -82,4 +82,4 @@ select guest_fname, guest_lname
       			     where guest_food_order.guest_id = guest.guest_id);
 
 spool off
--- end of 325queries.sql
+-- end of HotelQueries.sql
