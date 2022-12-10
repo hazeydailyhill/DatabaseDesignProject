@@ -1,0 +1,110 @@
+==== query 1 ====
+query for selecting all guests in either a 1bedroom or 2bedroom
+(room_type entered by user).
+
+Enter value for room_type: 1bedroom
+old   6:                         and room_type = '&room_type')
+new   6:                         and room_type = '1bedroom')
+
+GUEST_LNAME     ROOM_TYPE
+--------------- ----------
+Goodwin         1bedroom
+Butler          1bedroom
+Sanchez         1bedroom
+Powell          1bedroom
+Evans           1bedroom
+
+==== query 2 ====
+query for projecting names and salaries of highest paid kitchen staff.
+
+
+EMPL_LNAME         SALARY
+--------------- ---------
+Ridgewood        $1500.00
+Taylor           $1500.00
+
+==== query 3 ====
+query for projecting the average salary for each department.
+
+JOB_TITLE                 AVG(SALARY)
+------------------------- -----------
+Clerk                         $800.00
+Maintenance                  $1600.00
+Housekeeping                 $1266.67
+Accountant                   $3050.00
+Kitchen Staff                $1500.00
+
+==== query 4 ====
+query for projecting the dates each 2bedroom will be available on.
+
+
+ROOM_ID  ROOM_TYPE  ROOM_PRICE AVAILABLE
+-------- ---------- ---------- ---------
+wx111    2bedroom      $100.00 05-DEC-22
+wx333    2bedroom      $100.00 11-DEC-22
+yz222    2bedroom      $100.00 12-DEC-22
+yz444    2bedroom      $100.00 09-DEC-22
+yz555    2bedroom      $100.00 12-DEC-22
+
+==== query 5 ====
+query for projecting the bill of a given guest (guest_id input from user).
+
+Enter value for guest_id: 10471
+old   4: 	and guest.guest_id = '&guest_id'
+new   4: 	and guest.guest_id = '10471'
+
+GUEST BILL_TOTAL BILL_PAYMENT
+----- ---------- ------------
+10471    $562.00 no
+
+==== query 6 ====
+query for projecting the foods on the menu that are under $20.00.
+
+
+FOOD_NAME       FOOD_PRICE
+--------------- ----------
+Lasagna             $15.00
+Tacos               $12.00
+Spaghetti           $10.00
+Burger              $18.00
+Pancakes            $10.00
+Curry               $18.00
+Pizza               $15.00
+
+7 rows selected.
+
+==== query 7 ====
+query for projecting guest names and food_id from their orders.
+
+
+GUEST_FNAME     GUEST_LNAME     FOOD_ID
+--------------- --------------- -------
+Gabe            Ortiz           0100
+Gabe            Ortiz           1010
+Jasmine         Evans           1111
+Harry           Holt            1100
+Izzy            Powell          0000
+Rose            Mitchell        0001
+Alef            Butler          0011
+Eric            Sheldon         0111
+Finn            Waters          1100
+Finn            Waters          0101
+
+10 rows selected.
+
+==== query 8 ====
+query for projecting only the names of guests who have
+ordered food at least once.
+
+GUEST_FNAME     GUEST_LNAME
+--------------- ---------------
+Izzy            Powell
+Rose            Mitchell
+Alef            Butler
+Gabe            Ortiz
+Harry           Holt
+Eric            Sheldon
+Finn            Waters
+Jasmine         Evans
+
+8 rows selected.
