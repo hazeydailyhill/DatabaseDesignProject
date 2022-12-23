@@ -21,13 +21,13 @@ The Humboldt Hotel warmly welcomes guests to enjoy its luxury suites and communi
 
 # Code Explained
 ## Description
-<ins> HotelDesign.sql  </ins> creates tables for each entity class from 325HOTELMODEL.pdf. Those tables are employee, room, guest, reservation, bill, menu, and food order. Additionally, a multivalued attribute called guest_phone is eliminated through 1NF and put into a new table called phone. An M-to-N relationship between guest and food_order also creates an intersection table called guest_food_order. 
+**HotelDesign.sql** creates tables for each entity class from 325HOTELMODEL.pdf. Those tables are employee, room, guest, reservation, bill, menu, and food order. Additionally, a multivalued attribute called guest_phone is eliminated through 1NF and put into a new table called phone. An M-to-N relationship between guest and food_order also creates an intersection table called guest_food_order. 
 
-<ins> HotelPopulate.sql </ins>  populates each of the tables described above.
+**HotelPopulate.sql** populates each of the tables described above.
 
-<ins> HotelContents.sql </ins>  contains queries for projecting all attributes from each of the populated tables. 
+**HotelContents.sql** contains queries for projecting all attributes from each of the populated tables. 
 
-<ins> HotelQueries.sql </ins>  and <ins>  HotelReport.sql </ins> contain example queries using the populated tables to answer questions a user might have about the hotel.
+**HotelQueries.sql** and **HotelReport.sql** contain example queries using the populated tables to answer questions a user might have about the hotel.
 
 ## How to set up the database
 - HotelDesign.sql should be run first to create all of the tables.
