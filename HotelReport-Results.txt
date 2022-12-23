@@ -1,0 +1,39 @@
+==========================================
+Query for projecting the dates each two-bedroom suite will be available, 
+along with its room ID, price, and room type (two-bedroom!).
+
+
+
+ROOM_ID  ROOM_TYPE  ROOM_PRICE AVAILABLE ON                                     
+-------- ---------- ---------- ---------------                                  
+wx111    2bedroom      $100.00 05-DEC-22                                        
+wx333    2bedroom      $100.00 11-DEC-22                                        
+yz222    2bedroom      $100.00 12-DEC-22                                        
+yz444    2bedroom      $100.00 09-DEC-22                                        
+yz555    2bedroom      $100.00 12-DEC-22                                        
+
+
+==========================================
+Query for projecting the bill of a given guest
+(guest_id input from user).
+
+
+Enter value for guest_id: 10471
+old   5:   and guest.guest_id = '&guest_id'
+new   5:   and guest.guest_id = '10471'
+
+
+GUEST GUEST_NAME      BILL_TOTAL BILL_PAYMENT                                   
+----- --------------- ---------- ------------                                   
+10471 Harriet Goodwin    $562.00 no                                             
+
+
+==========================================
+Query for projecting names and salaries of highest paid kitchen staff.
+
+
+
+EMPLOYEE NAME      SALARY                                                       
+--------------- ---------                                                       
+Sam Ridgewood    $1500.00                                                       
+Mira Taylor      $1500.00
