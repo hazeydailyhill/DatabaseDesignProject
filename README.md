@@ -19,3 +19,11 @@ The Humboldt Hotel warmly welcomes guests to enjoy its luxury suites and communi
 - The costs of a guest’s reservation and food orders are added to their bill.
 - A guest has one total bill they are responsible for by their check-out date.
 
+# Description
+<ins> HotelDesign.sql </ins> creates tables for each entity class from 325HOTELMODEL.pdf. Those tables are employee, room, guest, reservation, bill, menu, and food order. Additionally, a multivalued attribute called guest_phone is eliminated through 1NF and put into a new table called phone. An M-to-N relationship between guest and food_order also creates an intersection table called guest_food_order. 
+
+<ins> HotelPopulate.sql </ins> populates each of the tables described above.
+
+<ins> HotelContents.sql </ins> contains queries for projecting all attributes from each of the populated tables. 
+
+<ins> HotelQueries.sql </ins> and <ins> HotelReport.sql </ins> contain example queries using the populated tables to answer questions a user might have about the hotel.
