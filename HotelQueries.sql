@@ -3,7 +3,7 @@ prompt CS 325 - Fall 2022
 prompt Last Modified: 12/09/2022
 prompt
 prompt =================================
-spool HotelQueryResults.txt
+spool HotelQuery-Results.txt
 
 prompt ==== query 1 ====
 prompt query for selecting all guests in either a 1bedroom or 2bedroom
