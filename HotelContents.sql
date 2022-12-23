@@ -2,7 +2,7 @@ prompt Haley Hill
 prompt CS 325 - Fall 2022
 prompt Last modified: 12/07/2022
 
-spool HotelResults.txt
+spool HotelContents.txt
 
 prompt ===== employee table =====
 col empl_id format a10
