@@ -1,4 +1,6 @@
 Add folder for source code
-Add folder for assets
 Add folder for results
-Fix formatting issue in HotelContents-Results.txt
+Add folder for assets
+Fix formatting in HotelContents-Results.txt
+Rename 325HOTELMODEL.pdf as 325MODEL.pdf
+   - figure out how to rename a .pdf on github
