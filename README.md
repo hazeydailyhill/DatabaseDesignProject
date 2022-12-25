@@ -21,7 +21,7 @@ The Humboldt Hotel warmly welcomes guests to enjoy its luxury suites and communi
 
 # Code Explained
 ## Description
-**HotelDesign.sql** creates tables for each entity class from 325MODEL.pdf. Those tables are employee, room, guest, reservation, bill, menu, and food order. Additionally, a multivalued attribute called guest_phone is eliminated through 1NF and put into a new table called phone. An M-to-N relationship between guest and food_order also creates an intersection table called guest_food_order. (Process shown in 325DESIGN.pdf)
+**HotelDesign.sql** creates tables for each entity class from 325HOTELMODEL.pdf. Those tables are employee, room, guest, reservation, bill, menu, and food order. Additionally, a multivalued attribute called guest_phone is eliminated through 1NF and put into a new table called phone. An M-to-N relationship between guest and food_order also creates an intersection table called guest_food_order. (Process shown in 325DESIGN.pdf)
 
 **HotelPopulate.sql** populates each of the tables described above.
 
